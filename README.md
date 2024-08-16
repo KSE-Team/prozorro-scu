@@ -1,4 +1,3 @@
-# prozorro-scu
 
 # ProZorro Procurement Data Analysis
 
@@ -11,12 +10,15 @@ This project focuses on analyzing procurement data from the ProZorro platform. I
 ### 1. `prozorro_scu_clustering.ipynb`
 
 **Objective:**  
-The primary task of this notebook is to process raw procurement data and output it at the SKU (Stock Keeping Unit) level.
+The primary task of this notebook is to process raw procurement data and output it at the SKU (Stock Keeping Unit) level. 
+- Dtaset: The project involves analyzing data on office equipment tenders from Prozorro for the years 2023-2024.
+- Data: Initially, the dataset contained 518,601 price records, which were cleaned down to 237,260 entries after removing missing values? and ~80,000 - in final.
+Objective: The notebook  focused on clustering or other analytical techniques related to this dataset.
 
 **Steps:**
 - **Data Loading:** Procurement data is loaded from ProZorro.
 - **Data Cleaning:** The raw data is cleaned to remove any inconsistencies or errors.
-- **Clustering:** The cleaned data is clustered based on similar goods, focusing specifically on the product type `30190000-7 Office equipment market`.
+- **Clustering:** The cleaned data is clustered based on similar goods using k-means metod.
 - **Outlier Removal:** Outliers and clusters with fewer than 50 records are removed.
 - **Shapiro Test Filtering:** Records where the Shapiro-Wilk test score is less than 95% are filtered out.
 
@@ -42,13 +44,3 @@ The analysis provides insights into the data's structure and reliability, settin
    git clone https://github.com/KSE-Team/prozorro-scu
 
 
-## Project Overview
-- Dataset: The project involves analyzing data on office equipment tenders from Prozorro for the years 2023-2024.
-- Data: Initially, the dataset contained 518,601 price records, which were cleaned down to 237,260 entries after removing missing values? and ~80,000 - in final.
-Objective: The notebook  focused on clustering or other analytical techniques related to this dataset.
-## Key Components:
-- Data Loading and Cleaning:
-The notebook begins by loading a CSV file and performing various cleaning operations like filtering out missing or invalid price data and calculating VAT-inclusive prices.
-- Libraries Used:
-Pandas, NumPy, SciPy, Matplotlib, Seaborn for data manipulation and visualization.
-TensorFlow/Keras for text preprocessing.
