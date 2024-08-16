@@ -11,7 +11,7 @@ This project focuses on analyzing procurement data from the ProZorro platform. I
 
 **Objective:**  
 The primary task of this notebook is to process raw procurement data and output it at the SKU (Stock Keeping Unit) level. 
-- Dtaset: The project involves analyzing data on office equipment tenders from Prozorro for the years 2023-2024.
+- Dtaset: The project involves analyzing data on office equipment tenders (`30190000-7 Office equipment market`) from Prozorro for the years 2023-2024.
 - Data: Initially, the dataset contained 518,601 price records, which were cleaned down to 237,260 entries after removing missing values? and ~80,000 - in final.
 Objective: The notebook  focused on clustering or other analytical techniques related to this dataset.
 
